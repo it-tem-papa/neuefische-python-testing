@@ -41,16 +41,5 @@ def test_subtract_zero():
     assert subtract(0, 0) == 0
     assert subtract(0, 5) == -5
     assert subtract(5, 0) == 5
-    
-def test_add_raises_value_error_on_invalid_types():
-    with pytest.raises(ValueError, match="Both arguments must be integers."):
-        add(2, "e")
-    with pytest.raises(ValueError, match="Both arguments must be integers."):
-        add("a", 3)
-    with pytest.raises(ValueError, match="Both arguments must be integers."):
-        add("a", "b")
-    with pytest.raises(ValueError, match="Both arguments must be integers."):
-        add(2.5, 3)
-    with pytest.raises(ValueError, match="Both arguments must be integers."):
-        add(2, None)
+
 

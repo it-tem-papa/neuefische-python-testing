@@ -4,5 +4,6 @@ def add(a: int, b: int) -> int:
     except TypeError:
         raise ValueError("Both arguments must be integers.")
 
+
 def subtract(a: int, b: int) -> int:
     return a - b
